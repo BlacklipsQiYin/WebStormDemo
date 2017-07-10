@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hybird</title>
+
+    <script>
+
+        function onJsToNative(){
+            var  value = document.getElementById("inputValue").value;
+            alert(value);
+
+            window.location.href = "login://usermanager/userlogin?userName="+value;
+        }
+
+        function onJsToNative2(){
+
+            MyWeb.showToast("加油");
+        }
+
+        function onNativeToJs(fromNativeValue){
+            alert(fromNativeValue);
+        }
+
+    </script>
+</head>
+<body>
+
+<img src="https://img6.bdstatic.com/img/image/pcindex/gqdongmanxao.jpg">
+<img src="https://img6.bdstatic.com/img/image/smallpic/lxdzuo.jpg">
+
+<input id="inputValue">
+<button onclick="onJsToNative()">jsToNative</button>
+<button onclick="onJsToNative2()">jsToNative点击</button>
+
+</body>
+</html>

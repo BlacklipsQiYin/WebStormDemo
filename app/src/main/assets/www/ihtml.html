@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>七音</title>
+
+    <script>
+
+        function clickButton(){
+            var value = document.getElementById("button").value;
+            alert(value);
+
+            window.location.href = "login://usermanager/userlogin?userName="+value;
+        }
+
+    </script>
+
+</head>
+<body>
+
+<input id="button">
+<button onclick="clickButton()">点击</button>
+
+</body>
+</html>
